@@ -1,23 +1,29 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    
-    burger.addEventListener('click', () => {
-        //Toggle Nav
-        nav.classList.toggle('nav-active');
-        //Animate Links
-        navLinks.forEach((link,index) => {
-            if(link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
-            }
-        });
-        //Burger animation
-        burger.classList.toggle('toggle');
+const burgerMenu = document.querySelector(".burgerMenu");
+const menuItems = document.querySelectorAll(".menuItem");
+const burger = document.querySelector(".burger");
+const closeIcon = document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
-    });
+function toggleMenu() {
+  if (burgerMenu.classList.contains("showMenu")) {
+    burgerMenu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    burgerMenu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
 }
 
-navSlide();
+burger.addEventListener("click", toggleMenu);
+
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", toggleMenu);
+});
+
+// function resizeMenuToggle() {
+// if () {
+//     window.addEventListener("resize", toggleMenu);
+// }
+// }

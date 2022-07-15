@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,17 +18,34 @@
     />
 
     <title>Deep Six Vintage</title>
+    <link rel="icon" href="img/deepsix.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
+      <!-- Mobile Burger Menu -->
+      <ul class="burgerMenu">
+        <li><a class="menuItem active" href="index.html">shop</a></li>
+        <li><a class="menuItem" href="about.html">about</a></li>
+        <li><a class="menuItem" href="contact.html">contact</a></li>
+        <li>
+          <a
+            class="menuItem instaItem"
+            href="https://www.instagram.com/deepsixvtg/"
+            target="_blank"
+            ><img src="img/instagram.png"
+          /></a>
+        </li>
+      </ul>
+
+      <button class="burger">
+        <i class="menuIcon material-icons md-36">menu</i>
+        <i class="closeIcon material-icons md-36">close</i>
+      </button>
+
+      <!-- Desktop menu -->
       <ul class="links-container">
         <li class="link-item">
           <a href="index.html" class="link active">shop</a>
@@ -36,7 +57,7 @@
       </ul>
       <div class="logo">
         <a href="index.html"
-          ><img src="img/logo.png" class="logo-icon" alt=""
+          ><img src="img/deepsix.png" class="logo-icon" alt=""
         /></a>
       </div>
       <div class="user-interactions">
