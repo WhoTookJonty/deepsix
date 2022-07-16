@@ -8,6 +8,8 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+/* Desktop Navbar */
+
 .navbar {
   width: 100%;
   height: 140px;
@@ -98,6 +100,8 @@ body {
   right: -12px;
 }
 
+/* Mobile Burger Menu */
+
 .menuItem {
   display: block;
   margin: 4rem 3rem;
@@ -177,7 +181,32 @@ body {
 ****** Content Boxes *****
 ========================*/
 
-.content-section {
+.container {
+  width: 60%;
+  margin: auto;
+  margin-top: 65px;
+}
+
+.post {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.message {
+  display: inline-block;
+}
+
+.major-heading {
+  font-size: 30px;
+}
+
+.minor-heading {
+  color: black;
+  font-size: 25px;
+}
+
+.info {
+  font-size: 18px;
 }
 
 .row {
